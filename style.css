@@ -1,0 +1,47 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+html { scroll-behavior: smooth; }
+body { color: #333; line-height: 1.6; }
+
+/* Navigation */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 10%; background: #003366; color: white; position: sticky; top: 0; z-index: 100; }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+.login-nav-btn { background: #ffcc00; color: #003366 !important; padding: 5px 15px; border-radius: 5px; }
+
+/* Hero */
+.hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1523050335102-c325091d53fb?auto=format&fit=crop&w=1200') center/cover; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+.hero h1 { font-size: 3rem; }
+.btn { background: #ffcc00; color: #003366; padding: 10px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; display: inline-block; }
+
+/* Faculty & Cards */
+.faculty, .highlights, .fees-section { padding: 60px 10%; text-align: center; }
+.faculty-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 30px; }
+.faculty-card img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #ffcc00; object-fit: cover; }
+
+/* Highlights & Countdown */
+.highlights { display: flex; background: #f4f4f4; gap: 30px; flex-wrap: wrap; }
+.award-box, .countdown-box { flex: 1; min-width: 300px; }
+.award-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px; }
+#countdown { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
+.time-box { background: #003366; color: white; padding: 15px; border-radius: 5px; min-width: 70px; }
+
+/* Tables & Forms */
+.table-wrapper { overflow-x: auto; margin: 20px 0; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; border: 1px solid #ddd; }
+th { background: #003366; color: white; }
+.btn-download { background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+
+/* Modal */
+.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+.modal-content { background: white; margin: 15% auto; padding: 30px; width: 320px; border-radius: 10px; position: relative; }
+.close-btn { position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; }
+
+/* Common Form Elements */
+input { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+.btn-submit { background: #003366; color: white; border: none; padding: 12px; cursor: pointer; width: 100%; font-weight: bold; border-radius: 5px; }
+
+/* Footer & BackToTop */
+footer { background: #222; color: white; text-align: center; padding: 30px; }
+#backToTop { display: none; position: fixed; bottom: 20px; right: 20px; background: #ffcc00; border: none; padding: 15px; border-radius: 50%; cursor: pointer; font-weight: bold; }
